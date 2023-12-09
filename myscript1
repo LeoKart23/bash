@@ -1,0 +1,7 @@
+#!bin/bash
+
+file=~/bash/*
+#for file in ~/bash/* ; do
+	echo "все скрипты файлов: ${file}"
+#	cat "${file}"
+#done

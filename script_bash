@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo "Запускается приложение..."
+
+value=9
+if (( value > 0 )); then
+	echo "${value} is positive"
+elif (( value == 0 )); then
+	echo "${value} is zero"
+else
+	echo "${value} is negative" 
+fi
+
+echo "Введите любую программу: "
+read program
+
+case "${program}" in
+clean)
+	echo "Очистка завершена!"
+	;;
+build)
+	echo "Сборка завершена!"
+	;;
+*)
+	echo "${program} Приложение не поддерживается!" 
+	exit 2
+	;;
+esac

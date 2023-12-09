@@ -1,0 +1,61 @@
+#!/bin/bash
+
+files=(script{1..10} myscript{1..10})
+for file in "${files[@]}" ; do
+	if [[ -f "${file}" ]]; then
+		ls -l "${file}"
+	else
+		echo "файл не найден: ${file}"
+		echo "Вы хотите создать новый файл? y/n"
+		read createFileAnswer
+		if [[ "${createFileAnswer}" = "y" ]]; then
+			touch "${file}"
+			chmod +x "${file}"
+		fi
+	fi
+done
+
+
+
+
+
+# for
+#array=(5 90 83 23 67)
+#for value in "${array[@]}" ; do
+#	echo "For each loop: ${value}"
+#done
+
+#for (( i = 0; i < "${#array[@]}"; i < 5; i++ )); do
+#	echo "Index value: ${1}. Array value: ${array[i]}"
+#done
+
+
+
+
+#until
+counter=10
+while (( counter <= 0 )); do
+	echo "Counter value: ${counter}"
+	counter=$(( counter - 1 ))
+	((counter-- ))
+done
+
+
+#while
+counter=10
+while (( counter > 0 )); do
+	echo "Counter value: ${counter}"
+	counter=$(( counter - 1 ))
+	((counter-- ))
+done
+
+
+
+#value=9
+#if (( value > 0 )); then
+#	echo "${value} is positive"
+#elif (( value == 0 )); then
+#	echo "${value} is zero"
+#else
+#	echo "${value} is negative" 
+#fi

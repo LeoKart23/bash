@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#for
+for file in ~/bash/script* ; do
+	echo -en "\033[0;32m скрипт в файле: ${file}\033[0m "
+	cat "${file}"
+done
+
+for file in ~/bash/myscript* ; do
+        echo -en "\033[0;32m скрипт в файле: ${file}\033[0m "
+        cat "${file}"
+done

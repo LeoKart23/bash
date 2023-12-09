@@ -1,0 +1,4 @@
+#!/bin/bash
+grade=5
+person="Lev"
+echo "$person is a good boy, he is in grade $grade"
