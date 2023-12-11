@@ -1,9 +1,12 @@
 #!/bin/bash
+
+# Сортировка файлов от большой буквы к меньшей данного слова
+
 val1=Likegeek
 val2=likegeek
-if [ $val1 \> $val2 ]
-then
-echo "$val1 is greater than $val2"
+
+if [ $val1 \> $val2 ]; then
+  echo "$val1 is greater than $val2"
 else
-echo "$val1 is less than $val2"
+  echo "$val1 is less than $val2"
 fi
