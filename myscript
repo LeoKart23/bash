@@ -3,8 +3,8 @@
 user=andov
 if grep $user /etc/passwd
   then
-    echo "The user $user Exists"
+    echo "Пользователь $user существует"
 elif ls /home
   then
-    echo "The user doesn't exist but anyway there is a directory under /home"
+    echo "Пользователь не существует, но в любом случае есть каталог в /home"
 fi
