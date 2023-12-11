@@ -2,4 +2,5 @@
 
 grade=5
 person="Lev"
+
 echo "$person хороший мальчик, он получил оценку $grade"
