@@ -1,7 +1,10 @@
 #!/bin/bash
+
+# Выводит список в passwd
 file="/etc/passwd"
 IFS=$'\n'
+
 for var in $(cat $file)
 do
-echo " $var"
+  echo " $var"
 done
