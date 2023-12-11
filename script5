@@ -1,8 +1,11 @@
 #!/bin/bash
+
+# Проверяет пользователь существует или нет
+
 user=$USER
-if grep $user /etc/passwd
-then
-echo "Пользователь $user существует"
+
+if grep $user /etc/passwd; then
+  echo "Пользователь $user существует"
 else
-echo "Пользователь $user не существует"
+  echo "Пользователь $user не существует"
 fi
