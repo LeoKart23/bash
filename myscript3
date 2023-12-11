@@ -1,6 +1,7 @@
 #!/bin/bash
+
 user="lev"
-if [ $user = $USER ]
-then
-echo "The user $user is the current logged in user"
+
+if [ $user = $USER ]; then
+  echo "Пользователь $user в данный момеент является текующим в системе"
 fi
