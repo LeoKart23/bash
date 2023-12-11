@@ -1,9 +1,11 @@
 #!/bin/bash
+
 val1=8
 val2=9
+
 if [ $val1 -ge $val2 ]
-then
-echo "The test value $val1 is equels $val2"
+  then
+  echo "The test value $val1 is equels $val2"
 else
-echo "The test value $val1 is not equels $val2"
+  echo "The test value $val1 is not equels $val2"
 fi
