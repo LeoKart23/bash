@@ -1,0 +1,15 @@
+#!/bin/bash
+
+files=(file{1..5})
+for file in "${files[@]}" ; do
+	if [[ -f "${file}" ]]; then
+		echo "Найден файл: ${file}"
+		echo "Удалить этот файл?"
+		read deleteFile
+		if [[ "${deleteFile}" = "y" ]]; then
+			rm "${file}"
+		else
+			echo " Файл не удален "
+		fi		
+	fi
+done
