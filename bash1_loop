@@ -1,0 +1,70 @@
+#!/bin/bash
+
+# for
+files=(file{1..5})
+for file in "${files[@]}"; do
+	if [[ -f "${file}" ]]; then
+		ls -l "${file}"
+	else 
+		echo " Не найден этот файл: ${file}"
+		echo " Создать файл?"
+		read createFile
+		if [[ "${createFile}" = "y" ]]; then
+			touch "${file}"
+		fi
+
+	fi
+done
+echo "________________________ "
+echo " "
+
+
+
+
+
+array=( 5 14 24 56 99 100 )
+for value in "${array[@]}"; do
+	echo "For eacho loop: ${value}"
+done
+echo "________________________ "
+echo " "
+
+
+for (( i = 0; i < "${#array[@]}"; i++ )); do
+	echo "Index value: ${i} Array value ${array[i]}"
+done 
+echo "________________________ "
+echo " "
+
+# until
+
+counter=10
+echo " Цикл с помощью until "
+until (( counter <= 0 )); do
+	echo " Counter value: ${counter}"
+	(( counter-- ))
+done
+echo "________________________ "
+echo " "
+
+
+# while
+counter=10
+echo " Цикл с помощью while "
+while (( counter > 0)); do
+	echo " Counter value: ${counter}"
+	counter=$(( counter - 1 ))
+done
+
+
+
+
+
+value=-10
+if (( value > 0)); then
+	echo "${value} положительное значение"
+elif (( value == 0)); then
+	echo "${value} нулевое значение"
+else
+	echo "${value} отрицательное значение"
+fi

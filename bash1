@@ -1,0 +1,10 @@
+#!/bin/bash
+
+value={ 0 4 5 8 -2 -10 }
+if (( value > 0)); then
+	echo "${value} положительное значение"
+elif (( value == 0)); then
+	echo "${value} нулевое значение"
+else
+	echo "${value} отрицательное значение"
+fi
