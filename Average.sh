@@ -48,13 +48,5 @@ echo "Средний возраст: $AVERAGE_SALARY"
 echo "Сумма возрастов: $SUMMAGE"
 echo "Сумма зарплаты: $SUMMSALARY"
 #echo "$counter"
-#for (( i = 0; i < "${#ZP[@]}"; i++)); do
-#       echo "Index value: "${i}". Array value: ${ZP[i]}"
-#done
-
-#if [[ "${#ZP}" != 0 ]]; then
-#       wc -l "$@"
-#fi
-
 
 ##### этот скрипт создан чтобы вывести из #таблицы fio, age, job, salary. Сделано #по задаче: вывести всех работников с #работой Engineer. нужно высчитать #среднее #значение возраста и зарплаты.
