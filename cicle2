@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#while
+counter=10
+
+while (( counter <= 0 )); do
+	echo "Counter value: ${counter}"
+	(( counter-- ))
+done

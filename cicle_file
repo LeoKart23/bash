@@ -1,0 +1,9 @@
+#!/bin/bash
+
+counter=0
+for file in $(ls *); do
+	echo "Файл в текующем каталоге: $file";
+	counter=$(($counter+1))
+	echo "______________________________________"
+done
+echo "Колличество файлов в текущем каталоге: $counter"

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+user=andov
+if grep $user /etc/passwd
+then
+echo "Пользователь $user существует"
+elif ls /home
+then
+echo "Пользователь не существует, но в любом случае есть каталог в /home"
+fi

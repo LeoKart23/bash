@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+echo "Script all argument: $*"
+
+clean() {
+	echo "going to clean directory..."	
+	echo "Function first argument: $2"
+	echo "Function all argument: $@"
+	for arg in "$@"; do
+		echo " Index: ${index}.  Argument: ${arg}"
+		(( index++ ))
+	done
+	echo ""
+#	return 5
+}
+
+result=$(clean $*)
+echo "Clean function result: ${result}"
+#clean $*
+#echo " Clean function status: $?"
